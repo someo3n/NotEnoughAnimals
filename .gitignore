@@ -1,0 +1,11 @@
+*
+
+!.gitignore
+!pom.xml
+!README.md
+!LICENSE
+
+img/
+src/
+img/**
+src/**
