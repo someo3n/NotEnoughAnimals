@@ -5,7 +5,7 @@
 !README.md
 !LICENSE
 
-img/
-src/
-img/**
-src/**
+!img/
+!src/
+!img/**
+!src/**

@@ -1,0 +1,13 @@
+name: NotEnoughAnimals
+version: '1.0'
+main: io.github.someo3n.notenoughanimals.NotEnoughAnimals
+api-version: '1.21'
+authors: [ dim9 ]
+description: Increased animal spawns (and despawns)
+commands:
+  neareload:
+    description: Reload Not Enough Animals config
+    permission: notenoughanimals.reload
+  neaglow:
+    description: Toggle debug mode in which entities spawned by Not Enough Animals glow
+    permission: notenoughanimals.glow

@@ -1,0 +1,93 @@
+# NotEnoughAnimals configuration file
+
+# The chance for a chunk that you load to be a chunk where entities will spawn
+# 1.0 = 100%, 0.0 = 0%
+spawning-chunk-chance: 0.65
+
+# How much times to try to spawn entities in a spawning chunk
+spawn-tries:
+  min: 1
+  max: 5
+
+# Spawning requirements for each entity
+spawn-rules:
+    # Allowed environments. Each one can be NORMAL, NETHER or THE_END
+  - environments: [NORMAL]
+    # Allowed biomes
+    # Refer to https://jd.papermc.io/paper/1.21.11/org/bukkit/block/Biome.html
+    # for a biome name list
+    biomes: [PLAINS, SUNFLOWER_PLAINS]
+    # Allowed blocks to stand on, "#" means insert the contents of a block tag
+    # Refer to https://jd.papermc.io/paper/1.21.11/org/bukkit/Material.html
+    # for a material name list
+    # And refer to https://jd.papermc.io/paper/1.21.11/org/bukkit/Tag.html
+    # for a tags name list
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    # Entity types that can spawn under these conditions
+    # Refer to https://jd.papermc.io/paper/1.21.11/org/bukkit/entity/EntityType.html
+    # for an entity type names list
+    types: [COW, SHEEP, PIG, CHICKEN, HORSE, DONKEY]
+  - environments: [NORMAL]
+    biomes: [FOREST, FLOWER_FOREST, BIRCH_FOREST, OLD_GROWTH_BIRCH_FOREST]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [SHEEP, PIG, CHICKEN, COW, WOLF]
+  - environments: [NORMAL]
+    biomes: [DARK_FOREST]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [SHEEP, PIG, CHICKEN, COW]
+  - environments: [NORMAL]
+    biomes: [TAIGA, OLD_GROWTH_PINE_TAIGA, OLD_GROWTH_SPRUCE_TAIGA]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [WOLF, FOX, RABBIT, SHEEP, PIG, CHICKEN, COW]
+  - environments: [NORMAL]
+    biomes: [SNOWY_TAIGA]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [WOLF, FOX, RABBIT, SHEEP, PIG, CHICKEN, COW]
+  - environments: [NORMAL]
+    biomes: [SNOWY_PLAINS, SNOWY_SLOPES, ICE_SPIKES]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [POLAR_BEAR, RABBIT, FOX]
+  - environments: [NORMAL]
+    biomes: [GROVE, FROZEN_PEAKS, JAGGED_PEAKS]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [RABBIT, FOX, GOAT]
+  - environments: [NORMAL]
+    biomes: [STONY_PEAKS, WINDSWEPT_HILLS, WINDSWEPT_GRAVELLY_HILLS]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [GOAT, SHEEP, LLAMA]
+  - environments: [NORMAL]
+    biomes: [WINDSWEPT_FOREST]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [SHEEP, PIG, CHICKEN, COW, LLAMA]
+  - environments: [NORMAL]
+    biomes: [MEADOW]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [DONKEY, SHEEP, RABBIT]
+  - environments: [NORMAL]
+    biomes: [CHERRY_GROVE]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [SHEEP, PIG, CHICKEN, BEE]
+  - environments: [NORMAL]
+    biomes: [JUNGLE, BAMBOO_JUNGLE, SPARSE_JUNGLE]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [CHICKEN, OCELOT, PARROT, PANDA]
+  - environments: [NORMAL]
+    biomes: [SAVANNA, SAVANNA_PLATEAU, WINDSWEPT_SAVANNA]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [HORSE, DONKEY, SHEEP, COW, PIG, CHICKEN]
+  - environments: [NORMAL]
+    biomes: [DESERT]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [RABBIT]
+  - environments: [NORMAL]
+    biomes: [SWAMP, MANGROVE_SWAMP]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [FROG]
+  - environments: [NORMAL]
+    biomes: [MUSHROOM_FIELDS]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [MOOSHROOM]
+  - environments: [NORMAL]
+    biomes: [BEACH, SNOWY_BEACH, STONY_SHORE]
+    on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
+    types: [TURTLE]
