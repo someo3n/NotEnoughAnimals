@@ -5,6 +5,7 @@ import io.github.someo3n.notenoughanimals.command.ReloadCommand;
 import io.github.someo3n.notenoughanimals.listener.ChunkListener;
 import io.github.someo3n.notenoughanimals.listener.EntityListener;
 import io.papermc.paper.entity.Leashable;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.configuration.Configuration;
 import org.bukkit.entity.*;
 import org.bukkit.event.Listener;
@@ -36,6 +37,7 @@ public final class NotEnoughAnimals extends JavaPlugin {
         getCommand("neareload").setExecutor(new ReloadCommand(this));
 
         registerListeners();
+        initMetrics();
     }
 
     public void reloadConfig() {
@@ -48,6 +50,10 @@ public final class NotEnoughAnimals extends JavaPlugin {
         minSpawnTries = config.getInt("spawn-tries.min", 0);
         maxSpawnTries = Math.abs(config.getInt("spawn-tries.max", 3)+1);
         spawnRules = SpawnRule.fromConfigurationSection(config);
+    }
+
+    private void initMetrics() {
+        Metrics metrics = new Metrics(this, 29402);
     }
 
     private void registerListeners() {

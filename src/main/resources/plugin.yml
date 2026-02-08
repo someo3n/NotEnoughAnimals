@@ -1,5 +1,5 @@
 name: NotEnoughAnimals
-version: '1.0'
+version: '2'
 main: io.github.someo3n.notenoughanimals.NotEnoughAnimals
 api-version: '1.21'
 authors: [ dim9 ]

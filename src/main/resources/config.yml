@@ -91,3 +91,7 @@ spawn-rules:
     biomes: [BEACH, SNOWY_BEACH, STONY_SHORE]
     on-top-of: ["#ANIMALS_SPAWNABLE_ON"]
     types: [TURTLE]
+  - environments: [NETHER]
+    biomes: [NETHER_WASTES, WARPED_FOREST, CRIMSON_FOREST]
+    on-top-of: ["NETHERRACK"]
+    type: [TURTLE]
